@@ -1,0 +1,33 @@
+{
+    "deviceId":
+        {
+            "dataType": "guid",
+            "isUnique": true,
+            "isObligatory": true
+        },
+    "deviceSerialNumber":
+        {
+            "dataType": "string",
+            "isUnique": false,
+            "isObligatory": true
+        },
+    "deviceType": ["remoteCommunicationDevice", "baseDevice"],
+    "properties":
+        [
+            {
+                "propertyName": "string",
+                "propertyDataType": ["number", "string"],
+                "value": {
+                    "dataType": "propertyDataType",
+                    "isObligatory": false
+                },
+                "unit": "string"
+            }
+        ],
+    "attribute":
+        {
+            "name": "string",
+            "dataType": "string",
+            "associated": ["property"]
+        }
+}

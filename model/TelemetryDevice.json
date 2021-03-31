@@ -1,0 +1,41 @@
+{
+    "deviceId":
+        {
+            "dataType": "guid",
+            "isUnique": true,
+            "isObligatory": true
+        },
+    "deviceSerialNumber":
+        {
+            "dataType": "string",
+            "isUnique": false,
+            "isObligatory": true
+        },
+    "deviceType": ["soilHumiditySensor", "rainSensor", "temperatureSensor"],
+    "properties":
+        [
+            {
+                "propertyName": "string",
+                "propertyDataType": ["number", "string"],
+                "value": {
+                    "dataType": "propertyDataType",
+                    "isObligatory": false
+                },
+                "unit": "string"
+            }
+        ],
+    "attribute":
+        {
+            "name": "string",
+            "dataType": "string",
+            "associated": ["property", "variable"]
+        },
+    "variables":
+        [
+            {
+                "variableName": "string",
+                "variableDataType": ["string", "number"],
+                "unit": "string"
+            }
+        ]
+}

@@ -1,0 +1,38 @@
+{
+    "deviceId":
+        {
+            "dataType": "guid",
+            "isUnique": true,
+            "isObligatory": true
+        },
+    "eventId":
+        {
+            "dataType": "guid",
+            "isUnique": true,
+            "isObligatory": false
+        },
+    "category": ["deviceConnected", "deviceDisconnected", "deviceStructureUpdated"],
+    "action":
+        {
+            "dataType": "string",
+            "description": "string",
+            "actionNeeded":
+                {
+                    "dataType": "bool",
+                    "isObligatory": true
+                }
+        },
+    "additionalInfo":
+        [
+            {
+                "infoName": "string",
+                "additionalParameters":
+                    [
+                        {
+                            "parameterName": "string",
+                            "parameterValue": ["string", "number"]
+                        }
+                    ]
+            }
+        ]
+}

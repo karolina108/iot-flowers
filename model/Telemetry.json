@@ -1,0 +1,6 @@
+{
+    "deviceId": "guid",
+    "variableName": "string",
+    "value": ["string", "number"],
+    "timestamp": "string"
+}

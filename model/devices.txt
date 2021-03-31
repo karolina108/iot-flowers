@@ -1,0 +1,39 @@
+2 domeny
+
+urządzenie telemetryczne
+    - unikalne id
+    - własne unikalne id (numer seryjny)
+    - zestaw właściwości (informacje na temat stanu urządzenia)
+        - nazwa
+    - sygnały / zmienne
+    - typ (nie można zmienić typu)
+
+urządzenie komunikacyjne
+    - unikalne id
+    - własne unikalne id (numer seryjny)
+    - zestaw właściwości (informacje na temat stanu urządzenia)
+        - nazwa
+        - lokalizacja
+    - sygnały / zmienne
+    - typ (nie można zmienić typu)
+
+
+urządzenie w strukturze
+    - unikalne id (takie samo id, bo to to samo urządzenie)
+    - podłączone do
+
+typy wiadomości
+
+d2c (device-to-cloud):
+    - telemetria
+        - co? (sygnał)
+        - wartość
+        - timestamp
+        - unikalne id urządzenia
+
+    - event
+        - unikalne id
+        - akcja
+        - opis
+        - kategoria
+        - dodatkowe dane
